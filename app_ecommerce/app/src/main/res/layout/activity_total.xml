@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/idbt_paypal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".total_act">
+
+
+    <TextView
+        android:id="@+id/id_total"
+        android:layout_width="131dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="60dp"
+        android:gravity="left"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|end"
+        android:layout_margin="30dp"
+        android:layout_marginTop="92dp"
+        android:layout_marginEnd="28dp"
+        android:background="@color/cardview_shadow_start_color"
+        android:text="PAYPAL"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_total" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="326dp"
+        android:layout_marginTop="215dp"
+        android:layout_marginEnd="1dp"
+        android:background="@color/purple_200"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button">
+
+
+        <ImageButton
+            android:id="@+id/btsite"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/form2"
+            android:src="@android:drawable/ic_menu_search"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/btlocal"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/form2"
+            android:src="@android:drawable/ic_menu_mylocation"
+
+            tools:ignore="SpeakableTextPresentCheck" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="140dp"
+        android:layout_height="29dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="28dp"
+        android:gravity="right"
+        android:text="PRIX TOTAL :"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toStartOf="@+id/id_total" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
